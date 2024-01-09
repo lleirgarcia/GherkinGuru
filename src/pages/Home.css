@@ -1,0 +1,54 @@
+.select-test-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Asegura que la página ocupe todo el alto de la pantalla */
+  padding: 20px; /* Añade algo de espacio alrededor de los bordes */
+}
+
+.select-test-textarea,
+.select-test-button,
+.response-box {
+  width: 80%; /* Ajusta a la mayor parte del ancho de la pantalla */
+  max-width: 600px; /* Asegura que no sea demasiado grande en pantallas anchas */
+  margin: 10px auto; /* Centra y añade espacio superior e inferior */
+}
+
+.response-box {
+  background-color: #fff; /* Fondo claro para contraste con el texto */
+  color: #333; /* Color de texto oscuro para legibilidad */
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave para profundidad */
+}
+
+/* Asegúrate de que el contenedor de la respuesta también tenga el mismo ancho */
+.response-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto; /* Centra el elemento dentro de su contenedor */
+}
+
+/* Asegúrate de que el contenedor de la respuesta también tenga el mismo ancho */
+.response-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto; /* Centra el elemento dentro de su contenedor */
+}
+.scenario-title-input {
+  width: 80%; /* Ajusta al mismo ancho que el textarea y el botón */
+  max-width: 600px; /* Igual que el ancho máximo del botón y el textarea */
+  margin: 10px auto; /* Centra y añade espacio superior */
+  padding: 15px; /* Espaciado interno para que sea cómodo escribir */
+  font-size: 1em; /* Tamaño de fuente similar al textarea */
+  border-radius: 4px; /* Bordes redondeados para que coincida con el estilo del textarea */
+}
+
+/* Para mantener el estilo cuando el input está enfocado */
+.scenario-title-input:focus {
+  outline: none;
+  border-color: #387ef5; /* Cambia el color del borde al enfocar, similar al botón de Ionic */
+  box-shadow: 0 0 5px rgba(56, 126, 245, 0.5); /* Sombra suave para resaltar el foco */
+}
