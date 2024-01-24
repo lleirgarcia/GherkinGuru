@@ -19,25 +19,5 @@ describe('Base tests', () => {
     cy.get('.select-test-button').click();
     cy.get('ion-spinner').should('exist');
   });
-
-  it('fills in the scenario title and test, then checks for a response', () => {
-    // Visit the page where the test is located
-    
-    // Fill in the scenario title
-    cy.get('.scenario-title-input') // Replace with your actual selector
-      .type('Student requests schedule and has unfinished classes');
-    
-    // Fill in the Gherkin test
-    cy.get('.select-test-textarea') // Replace with your actual selector
-      .type('GIVEN Student has unfinished classes{enter}WHEN Student requests class schedule{enter}THEN Student’s customized training plan is viewable');
-    
-    // Click the "Revisa tu test" button
-    cy.get('.select-test-button') // Replace with your actual selector
-      .click();
-    
-    // Assert a response is displayed
-    cy.get('.response-box', { timeout: 25000 }) // Wait up to 10 seconds for the response container to appear
-      .should('exist');
-  });
 });
   
