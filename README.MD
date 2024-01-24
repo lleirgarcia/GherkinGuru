@@ -3,7 +3,7 @@
 ## Summary
 In this repository, you will find the application that we are going to test during the course. It is a simple application with a series of minimal functionalities to put into practice various types of tests that we can perform in the field of testing.
 
-Additionally, we also find the Cypress repository for E2E and component testing.
+Main test are for this application are in other repository with prefix "gherkinguru-test-***" with different types of test. (TBD add list here)
 
 This application is web-based, and we can also generate an APK for testing on Android.
 
@@ -30,26 +30,6 @@ ionic cordova build android
 ### Start the APP client and server
 App: ionic serve
 Server: node src/server.js
-
-### Start Cypress for tests
-Start cypress wizard with
-``` 
-npx cypress open
-```
-
-E2E testing is already configured.
-
-#### How test are estructured?
-_TBD_
-
-#### How tests works in Cypress?
-_TBD_
-
-#### Execute tests with Cypress
-_TBD guide._
-
-
-
 
 ## Contact
 
